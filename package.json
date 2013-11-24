@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "description": "reactxtest",
   "dependencies": {
-    "rx": "~2.2.2"
+    "rx": "~2.2.2",
+    "when": "~2.6.0"
   },
   "scripts": {
     "start": "node app.js",
