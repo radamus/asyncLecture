@@ -1,7 +1,7 @@
 function log(val) {console.log(val);}
 
 
-function echo(val, callback) {  setTimeout(function() {callback(val);}, 500);}
+function echo(val, callback) {  setTimeout(function() {callback(val);}, Math.random()*1000);}
 
 function cb(result){log(result);}
 
