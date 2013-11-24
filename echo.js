@@ -1,8 +1,8 @@
 function log(val) {console.log(val);}
 
 
-function echo(val) { return setTimeout(function() {return val;}, 500);}
+function echo(val, callback) {  setTimeout(function() {callback(val);}, 500);}
 
-log(echo(1));
-log(echo(2));
-log(echo(3));
+echo(1, function(result){log(result);});
+echo(2, function(result){log(result);});
+echo(3, function(result){log(result);});
