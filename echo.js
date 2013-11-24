@@ -5,6 +5,12 @@ function echo(val, callback) {  setTimeout(function() {callback(val);}, Math.ran
 
 function cb(result){log(result);}
 
-echo(1, cb);
-echo(2, cb);
-echo(3, cb);
+echo(1, function(result){
+	log(result); 
+	echo(2, function(result){
+		log(result);
+		echo(3, function(result){
+			log(result);
+		});
+	});
+});
