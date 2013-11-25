@@ -40,8 +40,8 @@ function defferedEcho(val) {
 	return deffered.promise;
 }
 
-defferedEcho(null)
-.then(function(res) { log('deffered ' + res); return defferedEcho(2);})
+defferedEcho(1)
+.then(function(res) { log('deffered ' + res); return defferedEcho(null);})
 .then(function(res){log('deffered ' + res); return defferedEcho(3);} )
-.then(function(res){log('deffered ' + res); }, function(err){log('deffered ' + err);} );
+.then(function(res){log('deffered ' + res); }, function(err){log('deffered error ' + err);} );
 
