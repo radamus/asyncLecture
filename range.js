@@ -22,4 +22,4 @@ function range(start, amount, callback, done, err) {
 }
 
 
-range(0,3,function(res) {log(res)}, function(){ log("done!")}, function(err) {log("err");})
+range(0,3,function(res) {log(res)}, function(){ log("done!")}, function(err) {log("err");});
